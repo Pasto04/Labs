@@ -26,16 +26,25 @@ namespace LabSintaxis2
             {
                 Console.WriteLine();
                 Console.WriteLine(inputTexto.ToUpper());
+                Console.ReadKey();
             }
             if (op.Key == ConsoleKey.D2)  
             {
                 Console.WriteLine();
                 Console.WriteLine (inputTexto.ToLower());
+                Console.ReadKey();
             }
             if(op.Key == ConsoleKey.D3)
             {
                 Console.WriteLine();
                 Console.WriteLine(inputTexto.Length);
+                Console.ReadKey();
+            }
+            if (op.Key != ConsoleKey.D1 || op.Key != ConsoleKey.D2 || op.Key != ConsoleKey.D3)
+            {
+                Console.WriteLine();
+                Console.WriteLine("No se ingreso ninguno valor correcto");
+                Console.ReadKey();
             }
         }
     }
